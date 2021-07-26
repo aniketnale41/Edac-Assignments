@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Data</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-image: url("./bg.jpg");
+        background-size: cover;
+      }
+      legend {
+        background-color: white;
+      }
+      fieldset {
+        background-color: aliceblue;
+        margin-bottom: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .bgOverlay {
+        /* width: 100%; */
+        /* height: 100vh; */
+        background-color: rgba(21, 25, 37, 0.8);
+      }
+      .mainContianer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .head {
+        background-color: white;
+        color: black;
+        width: 400px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+      }
+      h1 {
+        color: white;
+        font-family: "Lobster";
+        font-size: 60px;
+        /* padding-top: 15px; */
+      }
+      .closeBtn {
+        width: 20px;
+        padding-top: 2px;
+        padding-left: 8px;
+        color: white;
+        background-color: red;
+      }
+      .title {
+        padding-left: 8px;
+        padding-top: 3px;
+        font-weight: 900;
+      }
+      .head {
+        background-color: antiquewhite;
+      }
+      .blank {
+        width: 40px;
+      }
+      .bTr {
+        height: 30px;
+      }
+      .windowBody {
+        height: 150px;
+        background-color: whitesmoke;
+        border-style: inset;
+        padding-left: 10px;
+        font-family: monospace;
+        font-size: larger;
+
+        /* border-color: rgb(44, 33, 33); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgOverlay">
+     
+      <div class="mainContianer">
+        <h1>Aniket Nale</h1>
+        <table>
+          <tr>
+            <td>
+              <div class="pd">
+                <div class="head">
+                  <div class="title">Personal Details</div>
+                  <div class="closeBtn">X</div>
+                </div>
+                <div class="windowBody">
+                  <ul>
+                    <li>Name: <b>Aniket Nale</b></li>
+                    <li>DOB: <b>24/11/1997</b></li>
+                    <li>Email Id: <b>naleaniket2@gmail.com</b></li>
+                    <li>Contact No: <b>7757812804</b></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+            <td class="blank"></td>
+            <td>
+              <div class="pd">
+                <div class="head">
+                  <div class="title">Family Details</div>
+                  <div class="closeBtn">X</div>
+                </div>
+                <div class="windowBody">
+                  <ul>
+                    <li>Father's Name: <b>Narayan Nale</b></li>
+                    <li>mother's Name: <b>Anjali Nale</b></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="bTr"></tr>
+          <tr>
+            <td>
+            <div class="pd">
+              <div class="head">
+                <div class="title">Educational Details</div>
+                <div class="closeBtn">X</div>
+              </div>
+              <div class="windowBody">
+                <table border=1 style="margin-top: 30px; margin-left: 20px;">
+                  <tr>
+                  <th>Qualification</th>
+                  
+                  <th>Passing Year </th>
+                  <th>Percentage </th>
+                  <tr>
+                  <td>Mech Engg</td>
+                 
+                  <td>2016</td>
+                  <td>68</td>
+                  </tr>
+                  <tr>
+                  <td>HSC</td>
+                  
+                  <td>2012</td>
+                  <td>72</td>
+                  </tr>
+                  <tr>
+                  <td>SSC</td>
+                  
+                  <td>2010</td>
+                  <td>79</td>
+                  </tr>
+                  </tr>
+                  </table>
+              </div>
+            </div>
+          </td>
+          <td class="blank"></td>
+          <td>
+            <div class="pd">
+              <div class="head">
+                <div class="title">Extra-Curricular Activities</div>
+                <div class="closeBtn">X</div>
+              </div>
+              <div class="windowBody">
+                <ul>
+                  <li><p>Hockey (District Level)</p></li>
+                  <li><p>Go-Karting</p></li>
+                  </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="bTr"></tr>
+        <tr>
+          <td colspan="3">
+            <div class="pd" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <div class="head">
+                <div class="title">Strength and Weakness</div>
+                <div class="closeBtn">X</div>
+              </div>
+              <div class="windowBody" style="width: 385px;">
+                <ul>
+                  <li>Strength: <b>Quick Lerner, Hard Working</b></li>
+                  <li>Weakness: <b>Overthinking</b></li>
+                  </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        </table>
+      </div>
+      <!-- 
+      <fieldset>
+        <legend>Personal Data</legend>
+        <li><b>Name:</b> Aniket Nale</li>
+        <li><b>Date Of Birth:</b> 24-11-1997</li>
+      </fieldset>
+      
+      <fieldset>
+        <legend> Educational Qualifications</legend>
+        <li><b>EDAC (Pursuing) </b></li>
+        <li><b>Mechanical Engineer</b></li>
+      </fieldset>
+
+      <fieldset>
+        <legend> Educational Qualifications</legend>
+        <li><b>EDAC (Pursuing) </b></li>
+        <li><b>Mechanical Engineer</b></li>
+      </fieldset> -->
+    </div>
+  </body>
+</html>
